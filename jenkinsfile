@@ -1,0 +1,9 @@
+  
+node{
+  stage('SCM checkout'){
+      git 'https://github.com/PremSurwase1710/Aug_2020_Pipeline/new/master/java_project'
+    }
+    stage('Compile-Package'){
+    sh 'mvn package'
+    }
+    }
